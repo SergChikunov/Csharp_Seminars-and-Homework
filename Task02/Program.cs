@@ -12,5 +12,5 @@ int NumMinus = num * (-1);
 while (NumMinus <= num)
 {
     Console.WriteLine(NumMinus);
-    NumMinus = NumMinus + 1;
+    NumMinus++;
 }
