@@ -9,7 +9,7 @@ int.Parse(NumStr03.ToString())
 string str = c.ToString();
     string ex = s.ToString();
 
-    Console.WriteLine(Int32.Parse(str)); */
+    Console.WriteLine(Int32.Parse(str)); 
 
 Console.WriteLine("Введите целое трехзначное число: ");
 // int num = Convert.ToInt32(Console.ReadLine());
@@ -34,3 +34,20 @@ Console.WriteLine(Num02);
 int SumResult = Num01 + Num02;
 
 Console.WriteLine("Сумма первой и последней цифры введенного числа равна: ", SumResult);
+*/
+Console.WriteLine("Введите трехзначное число: ");
+int num = Convert.ToInt32(Console.ReadLine());
+
+if (num >= 100 && num <= 999) //if (num > 99 && num < 1000)
+{
+    int firstDigit = num / 100; //456/10=4.56 Делим трехзначное число на 100, а так как переменная объявлена целочисленного типа, то сразу получаем первую цифру числа
+    int lastDigit = num % 10; // 456 % 10=450+6 Делим число на 10, остаток от деления и есть последняя цифра введенного числа
+
+    int result = firstDigit + lastDigit;
+
+    Console.WriteLine($"Сумма первой и последней цифры трехзначного числа = {result}");
+}
+else
+{
+    Console.WriteLine("Ошибка! Число не трехзначное.");
+}
