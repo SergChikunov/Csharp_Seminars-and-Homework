@@ -30,3 +30,5 @@ for(int i = 0; i < array01.Length; i++)
 }
 string result = isExist ? "Да" : "Нет";
 Console.WriteLine(result);
+
+// можно было так Console.WriteLine(isExist ? "Да" : "Нет"); было бы то же самое
