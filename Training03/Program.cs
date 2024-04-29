@@ -36,7 +36,7 @@ bool IfTriangExist(int sideA, int sideB, int sideC) // проверяем сущ
     return isExist;
 }
 
-Console.WriteLine("Введите первую сторону треугольника: ");
+Console.WriteLine("Введите первую сторону треугольника: "); //ввод значений сторон треугольника тоже можно было организовать в виде метода
 int aSide = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("\nВведите вторую сторону треугольника: ");
 int bSide = Convert.ToInt32(Console.ReadLine());
