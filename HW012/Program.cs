@@ -33,5 +33,5 @@ for (int j = 0; j < array.Length; j++) //определяем макс знач�
 Console.WriteLine("Максимальное значение: " + max);
 
 
-double resultMinMax = max - min;
+double resultMinMax = max  min;
 Console.WriteLine("Разность между минимальным и максимальным значениями составляет: " + resultMinMax);
